@@ -4,6 +4,28 @@
 }
 .box1{
     background-color: red;
+    
+}
+.box2{
+    background-color: blue;
+   
+}
+.box3{
+    background-color: yellow;
+    
+}
+.box4{
+    background-color: green;
+    
+}
+.box5{
+    background-color: pink;
+    
+}
+
+@media screen and (min-width: 400px)   {
+    .box1{
+    background-color: red;
     width: 100%;
 }
 .box2{
@@ -22,48 +44,24 @@
     background-color: pink;
     width: 70%;
 }
-@media screen and (max-width: 800px) and (min-width: 500px) {
-    .container {
+
+    .container{
         display: flex;
-        flex-direction: row;
+        flex: wrap;
     }
-
-    
-
-    .box1 {
-        width: 100%;
-    }
-
-    .box2{
-        width: 20%;
-    }
-
-    .box3{
-        width: 80%;
-    }
-
-    .box4{
-        width: 30%;
-    }
-
-    .box5{
-        width:70%;
-    }
-
-
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 900px) {
     .container {
         display: flex;
-        flex-direction: column;
+        width: 800px;
+        flex-wrap: wrap;
+        margin: auto;
     }
     .flexbox {
-        float: none !important;
-        width: 100%;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
+    width: 100%;
+}
+    
 
 }
 body {
